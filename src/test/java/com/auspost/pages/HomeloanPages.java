@@ -75,8 +75,6 @@ public class HomeloanPages extends PageObject
 
         String amount = null;
 
-
-
         WebDriverWait wait = new WebDriverWait(driver,10);
         WebElement textvalue = $(By.xpath("//span[contains(text(),'We estimate you could borrow:')]"));
         boolean status=wait.until(ExpectedConditions.attributeToBe(textvalue,"aria-live","assertive"));
@@ -85,9 +83,9 @@ public class HomeloanPages extends PageObject
                   amount = $(By.xpath("//span[contains(text(), 'We estimate you could borrow:')]/ancestor::div[@class='borrow__result text--white clearfix'] //span[@id='borrowResultTextAmount']")).getText();
                    amount = amount.substring(1);
             System.out.println(amount);
-            Assert.assertEquals(amount, string);
 
         }
+        Assert.assertEquals(amount, string);
 
 
 

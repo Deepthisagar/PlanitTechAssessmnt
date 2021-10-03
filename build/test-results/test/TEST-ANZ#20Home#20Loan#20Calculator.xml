@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ANZ Home Loan Calculator" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-03T09:43:10" hostname="MacBook-Pro.local" time="14.138">
+<testsuite name="ANZ Home Loan Calculator" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-03T09:49:25" hostname="MacBook-Pro.local" time="14.372">
   <properties/>
-  <testcase name="Validating Home Loan Calculator" classname="ANZ Home Loan Calculator" time="14.138"/>
-  <system-out><![CDATA[?[1;34m[INFO][2021-10-03 20:43:10] 
+  <testcase name="Validating Home Loan Calculator" classname="ANZ Home Loan Calculator" time="14.372"/>
+  <system-out><![CDATA[?[1;34m[INFO][2021-10-03 20:49:25] 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
@@ -12,36 +12,36 @@
 
 TEST STARTED: Validating Home Loan Calculator
 -------------------------------------------------------------------(anz-home-loan-calculator;validating-home-loan-calculator)
-?[m?[1m[DEBUG][2021-10-03 20:43:11] STARTING STEP: Definitions.user_navigates_to_anz_home_loan_calculator - checkingLogin
-?[m?[1;34m[INFO][2021-10-03 20:43:11] Instantiating driver
-?[m?[1;34m[INFO][2021-10-03 20:43:11] Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+?[m?[1m[DEBUG][2021-10-03 20:49:25] STARTING STEP: Definitions.user_navigates_to_anz_home_loan_calculator - checkingLogin
+?[m?[1;34m[INFO][2021-10-03 20:49:26] Instantiating driver
+?[m?[1;34m[INFO][2021-10-03 20:49:26] Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
 ?[mhttps://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/
 in STeps
-?[1m[DEBUG][2021-10-03 20:43:17] STEP DONE: checkingLogin
-?[m?[1m[DEBUG][2021-10-03 20:43:17] STARTING STEP: Definitions.user_enters_the_required_details - enteringdetails
-?[m?[1m[DEBUG][2021-10-03 20:43:21] STEP DONE: enteringdetails
-?[m?[1m[DEBUG][2021-10-03 20:43:21] STARTING STEP: Definitions.at_calculator_page_user_clicks_on_calculate_button - clickonCalcbutton
-?[m?[1m[DEBUG][2021-10-03 20:43:21] STEP DONE: clickonCalcbutton
-?[m?[1m[DEBUG][2021-10-03 20:43:21] STARTING STEP: Definitions.at_calculator_page_user_verifies_the_estiamted_amount_something - displayEstimation
+?[1m[DEBUG][2021-10-03 20:49:32] STEP DONE: checkingLogin
+?[m?[1m[DEBUG][2021-10-03 20:49:32] STARTING STEP: Definitions.user_enters_the_required_details - enteringdetails
+?[m?[1m[DEBUG][2021-10-03 20:49:35] STEP DONE: enteringdetails
+?[m?[1m[DEBUG][2021-10-03 20:49:35] STARTING STEP: Definitions.at_calculator_page_user_clicks_on_calculate_button - clickonCalcbutton
+?[m?[1m[DEBUG][2021-10-03 20:49:36] STEP DONE: clickonCalcbutton
+?[m?[1m[DEBUG][2021-10-03 20:49:36] STARTING STEP: Definitions.at_calculator_page_user_verifies_the_estiamted_amount_something - displayEstimation
 ?[m508,000
-?[1m[DEBUG][2021-10-03 20:43:23] STEP DONE: displayEstimation
-?[m?[1m[DEBUG][2021-10-03 20:43:23] STARTING STEP: Definitions.at_calculator_page_clicks_on_start_over_button - startOverAgain
-?[m?[1m[DEBUG][2021-10-03 20:43:23] STEP DONE: startOverAgain
-?[m?[1m[DEBUG][2021-10-03 20:43:23] STARTING STEP: Definitions.at_calculator_page_user_verifies_fields - verifyAfterStartOver
-?[m?[1m[DEBUG][2021-10-03 20:43:23] STEP DONE: verifyAfterStartOver
-?[m?[1m[DEBUG][2021-10-03 20:43:23] STARTING STEP: Definitions.at_calculator_page_user_enters_livining_expense_as_something - enterLivingExpenseOnly
-?[m?[1m[DEBUG][2021-10-03 20:43:24] STEP DONE: enterLivingExpenseOnly
-?[m?[1m[DEBUG][2021-10-03 20:43:24] STARTING STEP: Definitions.at_calculator_page_a_message_should_be_displayed - dispayMessgae
-?[m?[1m[DEBUG][2021-10-03 20:43:24] STEP DONE: dispayMessgae
+?[1m[DEBUG][2021-10-03 20:49:37] STEP DONE: displayEstimation
+?[m?[1m[DEBUG][2021-10-03 20:49:37] STARTING STEP: Definitions.at_calculator_page_clicks_on_start_over_button - startOverAgain
+?[m?[1m[DEBUG][2021-10-03 20:49:38] STEP DONE: startOverAgain
+?[m?[1m[DEBUG][2021-10-03 20:49:38] STARTING STEP: Definitions.at_calculator_page_user_verifies_fields - verifyAfterStartOver
+?[m?[1m[DEBUG][2021-10-03 20:49:38] STEP DONE: verifyAfterStartOver
+?[m?[1m[DEBUG][2021-10-03 20:49:38] STARTING STEP: Definitions.at_calculator_page_user_enters_livining_expense_as_something - enterLivingExpenseOnly
+?[m?[1m[DEBUG][2021-10-03 20:49:38] STEP DONE: enterLivingExpenseOnly
+?[m?[1m[DEBUG][2021-10-03 20:49:38] STARTING STEP: Definitions.at_calculator_page_a_message_should_be_displayed - dispayMessgae
+?[m?[1m[DEBUG][2021-10-03 20:49:39] STEP DONE: dispayMessgae
 ?[m]]></system-out>
-  <system-err><![CDATA[Oct 03, 2021 8:43:11 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[Oct 03, 2021 8:49:25 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 93.0.4577.15 (660fc11082ba57405eca2e8c49c3e1af756fbfae-refs/branch-heads/4577@{#203}) on port 44770
+Starting ChromeDriver 93.0.4577.15 (660fc11082ba57405eca2e8c49c3e1af756fbfae-refs/branch-heads/4577@{#203}) on port 19850
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1633254193.366][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
-Oct 03, 2021 8:43:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1633254568.447][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
+Oct 03, 2021 8:49:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

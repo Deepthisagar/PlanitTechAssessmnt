@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ANZ Home Loan Calculator" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-03T00:24:58" hostname="MacBook-Pro.local" time="15.363">
+  <properties/>
+  <testcase name="Validating Home Loan Calculator" classname="ANZ Home Loan Calculator" time="15.363"/>
+  <system-out><![CDATA[?[1;34m[INFO][2021-10-03 11:24:58] 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Validating Home Loan Calculator
+-------------------------------------------------------------------(anz-home-loan-calculator;validating-home-loan-calculator)
+?[m?[1m[DEBUG][2021-10-03 11:24:58] STARTING STEP: Definitions.user_navigates_to_ANZ_Home_Loan_Calculator - checkingLogin
+?[m?[1;34m[INFO][2021-10-03 11:24:59] Instantiating driver
+?[m?[1;34m[INFO][2021-10-03 11:24:59] Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+?[mhttps://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/
+in STeps
+?[1m[DEBUG][2021-10-03 11:25:05] STEP DONE: checkingLogin
+?[m?[1m[DEBUG][2021-10-03 11:25:05] STARTING STEP: Definitions.enter_the_required_Details - enteringdetails
+?[m?[1m[DEBUG][2021-10-03 11:25:08] STEP DONE: enteringdetails
+?[m?[1m[DEBUG][2021-10-03 11:25:08] STARTING STEP: Definitions.clicks_on_calculate_button - clickonCalcbutton
+?[m?[1m[DEBUG][2021-10-03 11:25:09] STEP DONE: clickonCalcbutton
+?[m?[1m[DEBUG][2021-10-03 11:25:09] STARTING STEP: Definitions.estiamted_amount_should_be_displayed_as - displayEstimation
+?[m?[1m[DEBUG][2021-10-03 11:25:12] STEP DONE: displayEstimation
+?[m?[1m[DEBUG][2021-10-03 11:25:12] STARTING STEP: Definitions.the_page_should_be_refreshed_upon_clicking_on_start_over_again_button - startOverAgain
+?[m?[1m[DEBUG][2021-10-03 11:25:13] STEP DONE: startOverAgain
+?[m?[1m[DEBUG][2021-10-03 11:25:13] STARTING STEP: Definitions.a_message_should_be_displayed_upon_entering_$_as_a_living_expense - dispayMessgae
+?[m?[1m[DEBUG][2021-10-03 11:25:13] STEP DONE: dispayMessgae
+?[m]]></system-out>
+  <system-err><![CDATA[Oct 03, 2021 11:24:59 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 93.0.4577.15 (660fc11082ba57405eca2e8c49c3e1af756fbfae-refs/branch-heads/4577@{#203}) on port 23410
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1633220701.070][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
+Oct 03, 2021 11:25:01 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

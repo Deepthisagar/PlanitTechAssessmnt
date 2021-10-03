@@ -1,0 +1,8 @@
+com/auspost/runners/CalcTest.java
+ com.auspost.runners.CalcTest
+com/auspost/steps/HomeLoanSteps.java
+ com.auspost.steps.HomeLoanSteps
+com/auspost/definitions/Definitions.java
+ com.auspost.definitions.Definitions
+com/auspost/pages/HomeloanPages.java
+ com.auspost.pages.HomeloanPages

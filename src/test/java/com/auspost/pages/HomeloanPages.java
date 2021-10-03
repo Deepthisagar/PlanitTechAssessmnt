@@ -5,9 +5,16 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.util.EnvironmentVariables;
 import net.thucydides.core.util.SystemEnvironmentVariables;
+
 import org.junit.Assert;
+import org.mockito.internal.matchers.Null;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.concurrent.TimeUnit;
 
 
 public class HomeloanPages extends PageObject
@@ -26,6 +33,7 @@ public class HomeloanPages extends PageObject
         driver = getDriver();
 
         driver.get(variables.getProperty("ANZ_URL"));
+        driver.manage().window().maximize();
 
         System.out.println(getDriver().getCurrentUrl());
     }
@@ -65,17 +73,24 @@ public class HomeloanPages extends PageObject
 
     public void displayEstimation(String string) throws InterruptedException {
 
-        WebElement estimateele=$(By.xpath("//span[contains(text(), 'We estimate you could borrow:')]/ancestor::div[@class='borrow__result text--white clearfix']"));
-        String stylevalue=estimateele.getAttribute("style");
-        while (stylevalue.isEmpty()) {
-            stylevalue=estimateele.getAttribute("style");
-            if(stylevalue.isEmpty()) {
-                String amount = $(By.xpath("//span[contains(text(), 'We estimate you could borrow:')]/ancestor::div[@class='borrow__result text--white clearfix'] //span[@id='borrowResultTextAmount']")).getText();
-                amount = amount.substring(1);
-                Assert.assertEquals(amount, string);
-                break;
-            }
+        String amount = null;
+
+
+
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        WebElement textvalue = $(By.xpath("//span[contains(text(),'We estimate you could borrow:')]"));
+        boolean status=wait.until(ExpectedConditions.attributeToBe(textvalue,"aria-live","assertive"));
+        if(status)
+        {
+                  amount = $(By.xpath("//span[contains(text(), 'We estimate you could borrow:')]/ancestor::div[@class='borrow__result text--white clearfix'] //span[@id='borrowResultTextAmount']")).getText();
+                   amount = amount.substring(1);
+            System.out.println(amount);
+            Assert.assertEquals(amount, string);
+
         }
+
+
+
     }
 
     public void startOveragain()

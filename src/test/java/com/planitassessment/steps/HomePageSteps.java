@@ -1,6 +1,6 @@
-package com.auspost.steps;
+package com.planitassessment.steps;
 
-import com.auspost.pages.HomeloanPages;
+import com.planitassessment.pages.HomeloanPages;
 import net.thucydides.core.annotations.Step;
 
 public class HomeLoanSteps {

@@ -1,4 +1,4 @@
-package com.auspost.runners;
+package com.planitassessment.runners;
 
         // import cucumber.api.CucumberOptions;
 
@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = {"classpath:features"},
-        glue = {"com.auspost.definitions"},
+        glue = {"com.planitassessment.definitions"},
         tags = {" @type=calc"}
 )
 public class CalcTest {

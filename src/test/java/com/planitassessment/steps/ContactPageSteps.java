@@ -1,33 +1,46 @@
 package com.planitassessment.steps;
 
+import com.planitassessment.pages.ContactPage;
 import com.planitassessment.pages.HomePage;
-import com.planitassessment.pages.HomeloanPages;
 import net.thucydides.core.annotations.Step;
 
-public class HomePageSteps {
+public class ContactPageSteps {
 
 
-    HomePage homePage;
+    ContactPage contactPage;
 
-    @Step
-    public void launchHomepage()
-    {
-        homePage.launchHomePage();
 
-    }
+
     @Step
     public void pageIsLoaded()
     {
-        homePage.pageIsLoaded();
+        contactPage.pageIsLoaded();
 
     }
 
     @Step
-    public void navigatefromHomepage(String navigateTo)
+    public void clickOnSubmit()
     {
-        homePage.navigateTo(navigateTo);
+        contactPage.clickOnSubmit();
 
     }
 
+    @Step
+    public void verifyErrorMessages()
+    {
+        contactPage.verifyErrorMessages();
+    }
+
+    @Step
+    public void enterValueinTextField(String string1, String string2)
+    {
+        contactPage.enterValue(string1,  string2);
+    }
+
+    @Step
+    public void verifySuccessMessage(String string2)
+    {
+        contactPage.verifySuccessMessage(string2);
+    }
 
 }

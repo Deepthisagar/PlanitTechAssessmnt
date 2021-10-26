@@ -12,12 +12,12 @@ import java.io.IOException;
 public class ParameterProvider {
 
     public enum ParameterName {
-        URL,
-        AUTHORIZATION
+        URL
+
     }
 
     public enum AppName {
-        MLCUI, TAXCALUI, AUPOST
+        JupiterToys
     }
 
 
@@ -25,29 +25,18 @@ public class ParameterProvider {
 
     public static String getParameter(ParameterName parameterName, AppName appName) {
         switch (appName) {
-            case MLCUI:
+
+            case JupiterToys:
                 if (parameterName == ParameterName.URL) {
-                    return variables.getProperty("MLCUI.url");
+                    return variables.getProperty("jupitertoys.url");
                 } else {
                     Assert.fail("Unknown Parameter requested :" + parameterName);
                 }
                 break;
-            case AUPOST:
-                switch (parameterName) {
-                    case URL:
-                        return variables.getProperty("AUPOST.api_url");
-                    case AUTHORIZATION:
-                        return variables.getProperty("AUPOST.APIKey");
-                    default:
-                        Assert.fail("Unknown Parameter requested :" + parameterName);
-                        break;
-                }
-            case TAXCALUI:
-                if (parameterName == ParameterName.URL) {
-                    return variables.getProperty("TAXCALUI.url");
-                } else {
-                    Assert.fail("Unknown Parameter requested :" + parameterName);
-                }
+
+
+
+
 //        switch (parameterName) {
 //            case STORE_ID:
 //                return variables.getProperty("store.id");

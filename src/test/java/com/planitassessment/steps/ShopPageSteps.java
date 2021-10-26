@@ -1,46 +1,41 @@
 package com.planitassessment.steps;
 
 import com.planitassessment.pages.ContactPage;
-import com.planitassessment.pages.HomePage;
+import com.planitassessment.pages.ShopPage;
 import net.thucydides.core.annotations.Step;
 
-public class ContactPageSteps {
+public class ShopPageSteps {
 
 
-    ContactPage contactPage;
+    ShopPage shopPage;
 
 
 
     @Step
     public void pageIsLoaded()
     {
-        contactPage.pageIsLoaded();
+        shopPage.pageIsLoaded();
 
     }
 
     @Step
-    public void clickOnSubmit()
+    public void selectanItem( int numberoftimes,String selectOption)
     {
-        contactPage.clickOnSubmit();
+        shopPage.selectanItem(numberoftimes,selectOption);
 
     }
 
     @Step
-    public void verifyErrorMessages()
+    public void clickOnCart()
     {
-        contactPage.verifyErrorMessages();
+        shopPage.clickOnCart();
     }
 
     @Step
-    public void enterValueinTextField(String string1, String string2)
+    public void verifyItemsInCart(Integer int1, Integer int2)
     {
-        contactPage.enterValue(string1,  string2);
+        shopPage.verifyItemsInCart(int1,  int2);
     }
 
-    @Step
-    public void verifySuccessMessage(String string2)
-    {
-        contactPage.verifySuccessMessage(string2);
-    }
 
 }

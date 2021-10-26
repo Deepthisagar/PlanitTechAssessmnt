@@ -2,6 +2,7 @@ package com.planitassessment.runners;
 
         // import cucumber.api.CucumberOptions;
 
+
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
@@ -10,9 +11,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"classpath:features"},
         glue = {"com.planitassessment.definitions"},
-        tags = {" @type=calc"}
+        tags = " @type=testcase1"
+
 )
-public class CalcTest {
-    public CalcTest() {
+public class Testcase1Test {
+    public Testcase1Test() {
     }
 }

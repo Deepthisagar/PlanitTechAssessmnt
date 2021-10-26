@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Contact Page Validation" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-26T08:52:15" hostname="MacBook-Pro.local" time="10.052">
+  <properties/>
+  <testcase name="Validating error messages upon entering invalid data" classname="Contact Page Validation" time="10.052"/>
+  <system-out><![CDATA[?[1;34m[INFO][2021-10-26 19:52:15] 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Validating error messages upon entering invalid data
+-------------------------------------------------------------------(contact-page-validation;validating-error-messages-upon-entering-invalid-data)
+?[m?[1m[DEBUG][2021-10-26 19:52:15] STARTING STEP: Definitions.user_launches_the_jupiter_toys_website - launchHomepage
+?[m?[1;34m[INFO][2021-10-26 19:52:15] Instantiating driver
+?[m?[1;34m[INFO][2021-10-26 19:52:15] Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+?[mLaunched the home page
+?[1m[DEBUG][2021-10-26 19:52:20] STEP DONE: launchHomepage
+?[m?[1m[DEBUG][2021-10-26 19:52:20] STARTING STEP: Definitions.user_verifies_home_page_is_displayed - pageIsLoaded
+?[m?[1m[DEBUG][2021-10-26 19:52:20] STEP DONE: pageIsLoaded
+?[m?[1m[DEBUG][2021-10-26 19:52:21] STARTING STEP: Definitions.user_navigates_to - navigatefromHomepage
+?[m?[1m[DEBUG][2021-10-26 19:52:21] STEP DONE: navigatefromHomepage
+?[m?[1m[DEBUG][2021-10-26 19:52:21] STARTING STEP: Definitions.user_verifies_shop_page_is_loaded - pageIsLoaded
+?[m?[1m[DEBUG][2021-10-26 19:52:21] STEP DONE: pageIsLoaded
+?[m?[1m[DEBUG][2021-10-26 19:52:22] STARTING STEP: Definitions.at_shop_page_user_clicks_on_buy_button_times_on_item - selectanItem
+?[m?[1m[DEBUG][2021-10-26 19:52:23] STEP DONE: selectanItem
+?[m?[1m[DEBUG][2021-10-26 19:52:23] STARTING STEP: Definitions.at_shop_page_user_clicks_on_buy_button_time_on_item - selectanItem
+?[m?[1m[DEBUG][2021-10-26 19:52:23] STEP DONE: selectanItem
+?[m?[1m[DEBUG][2021-10-26 19:52:23] STARTING STEP: Definitions.at_shop_page_user_clicks_on_cart_menu - clickOnCart
+?[m?[1m[DEBUG][2021-10-26 19:52:24] STEP DONE: clickOnCart
+?[m?[1m[DEBUG][2021-10-26 19:52:24] STARTING STEP: Definitions.in_the_cart_menu_user_verifies_if_FunnyCow_and_FluffyBunny_items_are_displayed - verifyItemsInCart
+?[m?[1m[DEBUG][2021-10-26 19:52:25] STEP DONE: verifyItemsInCart
+?[m]]></system-out>
+  <system-err><![CDATA[Oct 26, 2021 7:52:15 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 95.0.4638.17 (a9d0719444d4b035e284ed1fce73bf6ccd789df2-refs/branch-heads/4638@{#178}) on port 24393
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 26, 2021 7:52:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

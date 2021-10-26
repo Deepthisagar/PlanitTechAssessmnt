@@ -1,7 +1,6 @@
 package com.planitassessment.pages;
 
 import Utilities.PageHelper;
-import Utilities.ParameterProvider;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
@@ -13,91 +12,61 @@ import java.util.HashMap;
 import java.util.List;
 
 
-public class ContactPage extends PageObject
+public class ShopPage extends PageObject
 {
 
 
     private static PageHelper pageHelper;
     private final HashMap<String, WebElementFacade> elementMap = new HashMap<>();
 
-    @FindBy(xpath = "//input[contains(@name, 'forename' )]")
-    private WebElementFacade forename;
+    @FindBy(xpath = "//h4[text()='Funny Cow']/ancestor::li[@id='product-6'] //a")
+    private WebElementFacade funnycow;
 
-    @FindBy(xpath = "//input[contains(@name, 'email' )]")
-    private WebElementFacade email;
+    @FindBy(xpath = "//h4[text()='Fluffy Bunny']/ancestor::li[@id='product-4'] //a")
+    private WebElementFacade fluffybunny;
 
-    @FindBy(xpath = "//*[contains(@name, 'message' )]")
-    private WebElementFacade messagebox;
+    @FindBy(xpath = "//a[contains(text(), 'Cart')]")
+    private WebElementFacade cart;
 
-    @FindBy(xpath = "//*[contains(text(), 'Submit' )]")
-    private WebElementFacade Submitbutton;
+    @FindBy(xpath = "//*[contains(text(), 'Funny Cow')]/following-sibling::td/input[@name='quantity']")
+    private WebElementFacade funnycow_quantity;
 
+    @FindBy(xpath = "//*[contains(text(), 'Fluffy Bunny')]/following-sibling::td/input[@name='quantity']")
+    private WebElementFacade fluffybunny_quantity;
 
-
-    @FindBy(xpath = "//span[contains(text(),'is required')]")
-    private List<WebElementFacade> errormessages;
-
-
-    @FindBy(xpath = "//div[@class='alert alert-success']")
-    private WebElementFacade successmessage;
 
 
 
     public void pageIsLoaded() {
-        elementMap.put("submitbutton", Submitbutton);
+        elementMap.put("Funny Cow", funnycow);
+        elementMap.put("Fluffy bunny", fluffybunny);
     }
 
 
-    public void clickOnSubmit() {
-        Submitbutton.click();
-    }
+    public void selectanItem(int numberoftimes,String selectOption) {
 
-    public void verifyErrorMessages()
+        for(int i=0;i<numberoftimes;i++)
+        {
+            elementMap.get(selectOption).click();
+        }
+
+    }
+    public void clickOnCart()
     {
-        int errnum= errormessages.size();
-            if(errnum>0)
-            {
-
-            for (int i = 0; i < errnum; i++) {
-                try {
-                    String errormessage = errormessages.get(i).getText();
-                    if (errormessage.contains("is required")) {
-                        System.out.println(errormessage);
-                    }
-                } catch (Exception e) {
-                    Assert.fail("Exception upon clicking on submit button without entering mandatory fields " + e);
-                }
-
-            }
-        }
-            else if (errnum==0)
-            {
-                System.out.println("No Error messages displayed");
-            }
-
-
+        cart.click();
     }
 
-    public void enterValue(String string1, String value)
+    public void verifyItemsInCart(int int1,int int2)
     {
-        if(string1.contains("Forename")) {
-            forename.type(value);
-        }
-        else if(string1.contains("email")) {
-            email.type(value);
-        }
-        else if(string1.contains("message")) {
-            messagebox.type(value);
-        }
+        int funnycow_quantity_value=Integer.parseInt(funnycow_quantity.getAttribute("value"));
+        int fluffybunny_quantity_value=Integer.parseInt(fluffybunny_quantity.getAttribute("value"));
+
+        Assert.assertEquals(funnycow_quantity_value,int1);
+        Assert.assertEquals(fluffybunny_quantity_value,int2);
+
+
     }
 
-public void verifySuccessMessage(String message)
-{
-    WebDriverWait wait = new WebDriverWait(getDriver(), 10);
-    wait.until(ExpectedConditions.visibilityOf(successmessage));
-
-    Assert.assertEquals(message,successmessage.getText());
-}
 
 
 

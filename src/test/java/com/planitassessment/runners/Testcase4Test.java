@@ -10,9 +10,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"classpath:features"},
         glue = {"com.planitassessment.definitions"},
-        tags = {"@type=testcase3"}
+        tags = {"@type=testcase4"}
 )
-public class Testcase3Test {
-    public Testcase3Test() {
+public class Testcase4Test {
+    public Testcase4Test() {
     }
 }

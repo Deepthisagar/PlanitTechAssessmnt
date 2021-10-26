@@ -1,59 +1,32 @@
 package com.planitassessment.steps;
 
-import com.planitassessment.pages.HomeloanPages;
+import com.planitassessment.pages.HomePage;
 import net.thucydides.core.annotations.Step;
 
-public class HomeLoanSteps {
+public class HomePageSteps {
 
 
-    HomeloanPages homeloanPages;
+    HomePage homePage;
 
     @Step
-    public void checkingLogin()
+    public void launchHomepage()
     {
-        homeloanPages.VerifyNavigation();
-
-        System.out.println("in STeps");
+        homePage.launchHomePage();
 
     }
-
     @Step
-    public void enteringdetails(String string, String string2, String string3, String string4, String string5, String string6, String string7){
-        homeloanPages.EnterDetails(string,string2,string3,string4,string5,string6,string7);
-    }
-
-    @Step
-    public void clickonCalcbutton()
+    public void pageIsLoaded()
     {
-        homeloanPages.clickonCalcbutton();
+        homePage.pageIsLoaded();
+
     }
 
     @Step
-    public void displayEstimation(String string) throws InterruptedException {
-        homeloanPages.displayEstimation(string);
-    }
-    @Step
-    public void startOverAgain()
+    public void navigatefromHomepage(String navigateTo)
     {
-        homeloanPages.startOveragain();
+        homePage.navigateTo(navigateTo);
+
     }
 
-    @Step
-    public void verifyAfterStartOver()
-    {
-        homeloanPages.verifyFieldsAfterStartOver();
-    }
-
-    @Step
-    public void enterLivingExpenseOnly(String livingexpense)
-    {
-        homeloanPages.justLivingExpense(livingexpense);
-    }
-
-    @Step
-    public void dispayMessgae()
-    {
-        homeloanPages.dispayMessgae();
-    }
 
 }

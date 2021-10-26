@@ -24,7 +24,7 @@ apply plugin: "net.serenity-bdd.aggregator"
 repositories.addAll(buildscript.repositories)
 
 description = 'Gradle solution for Serenity-Cucumber4 forking mechanizm'
-group 'com.auspost'
+group 'com.planitassessment'
 version = '1.0-SNAPSHOT'
 
 idea.module {
@@ -65,7 +65,7 @@ test {
     // We need to have full list of runners to prevent case when count of cucumber forks > count of runners.
     // As result there, runners = ['FeatureSlicedRunner1', 'FeatureSlicedRunner2', 'FeatureSlicedRunner3']
     
-    List<String> runners = file('src/test/java/com/auspost/runners').listFiles()
+    List<String> runners = file('src/test/java/com/planitassessment/runners').listFiles()
             .collect { it.name }
           //  .findAll { it =~ 'ShakeoutRunner' }
             .collect { it.take(it.lastIndexOf('.')) } // trim '.java' to use file names in gradle test filter

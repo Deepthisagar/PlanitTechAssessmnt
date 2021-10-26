@@ -3,7 +3,7 @@ Download and Install JDK 1.8
 Download and unzip gradle and install
 set GRADLE_HOME and JAVA_HOME environment variables
 
-Repository:git clone 
+Repository:git clone https://github.com/Deepthisagar/PlanitTechAssessmnt
 
 Run Tests:Use the runner files under :src/test/java/runners
 

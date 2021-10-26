@@ -5,7 +5,7 @@ set GRADLE_HOME and JAVA_HOME environment variables
 
 Repository:git clone 
 
-Run Tests:Use the runner file :src/test/java/runners/CalcTest.java
+Run Tests:Use the runner files under :src/test/java/runners
 
 Test Reports:
 ANZCalc/build/reports/tests/test/index.html

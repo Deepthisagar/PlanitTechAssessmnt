@@ -8,7 +8,7 @@ Repository:git clone https://github.com/Deepthisagar/PlanitTechAssessmnt
 Run Tests:Use the runner files under :src/test/java/runners
 
 Test Reports:
-ANZCalc/build/reports/tests/test/index.html
+/build/reports/tests/test/index.html
 
 
 Update the chrome driver as per the Version in your System

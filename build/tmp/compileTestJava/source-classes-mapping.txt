@@ -1,22 +1,22 @@
 com/planitassessment/runners/Testcase3Test.java
  com.planitassessment.runners.Testcase3Test
-com/planitassessment/runners/Testcase2Test.java
- com.planitassessment.runners.Testcase2Test
-com/planitassessment/pages/ContactPage.java
- com.planitassessment.pages.ContactPage
 com/planitassessment/steps/ShopPageSteps.java
  com.planitassessment.steps.ShopPageSteps
-com/planitassessment/steps/ContactPageSteps.java
- com.planitassessment.steps.ContactPageSteps
-com/planitassessment/runners/Testcase4Test.java
- com.planitassessment.runners.Testcase4Test
-com/planitassessment/pages/ShopPage.java
- com.planitassessment.pages.ShopPage
 com/planitassessment/runners/Testcase1Test.java
  com.planitassessment.runners.Testcase1Test
+com/planitassessment/pages/ContactPage.java
+ com.planitassessment.pages.ContactPage
 com/planitassessment/steps/HomePageSteps.java
  com.planitassessment.steps.HomePageSteps
+com/planitassessment/pages/ShopPage.java
+ com.planitassessment.pages.ShopPage
 com/planitassessment/definitions/Definitions.java
  com.planitassessment.definitions.Definitions
 com/planitassessment/pages/HomePage.java
  com.planitassessment.pages.HomePage
+com/planitassessment/runners/Testcase4Test.java
+ com.planitassessment.runners.Testcase4Test
+com/planitassessment/steps/ContactPageSteps.java
+ com.planitassessment.steps.ContactPageSteps
+com/planitassessment/runners/Testcase2Test.java
+ com.planitassessment.runners.Testcase2Test
